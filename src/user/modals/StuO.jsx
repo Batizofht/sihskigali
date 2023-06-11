@@ -23,7 +23,7 @@ const [thero, setRoo] = useState("");
     const fetchDatas = async () => {
       try {
         // const theid = (user.student_id);
-        const response = await axios.get(`http://localhost:8080/sihs/controll.php?checko=${user.student_id}`);
+        const response = await axios.get(`https://switchiify.com/SIHS/controll.php?checko=${user.student_id}`);
         setPositions(response.data);
         console.log(response.data);
       } catch (error) {

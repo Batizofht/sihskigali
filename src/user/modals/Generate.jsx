@@ -8,7 +8,7 @@ const Gens = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/sihs/controll.php/sihs/controll.php?allthestudents");
+        const response = await axios.get("https://switchiify.com/SIHS/controll.php/sihs/controll.php?allthestudents");
         const data = response.data;
         setPositions(data);
       } catch (error) {

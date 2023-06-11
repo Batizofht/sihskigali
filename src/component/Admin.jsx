@@ -35,7 +35,7 @@ formDatas.append('file', formData.file);
 formDatas.append("STUDENTS","yes")
 
     axios
-      .post('http://localhost:8080/sihs/insert.php', formDatas)
+      .post('https://switchiify.com/SIHS/insert.php', formDatas)
       .then(response => {
         // Handle successful response
         console.log(response.data)

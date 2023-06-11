@@ -58,7 +58,7 @@ const plans = () =>{
         try {
           // const theid = (user.student_id);
   
-          const response = await axios.get(`http://localhost:8080/sihs/controll.php?check=${user.student_id}`);
+          const response = await axios.get(`https://switchiify.com/SIHS/controll.php?check=${user.student_id}`);
           setPositions(response.data);
           console.log(response.data);
         } catch (error) {
@@ -68,7 +68,7 @@ const plans = () =>{
         try {
           // const theid = (user.student_id);
   
-          const response = await axios.get(`http://localhost:8080/sihs/controll.php?checko=${user.student_id}`);
+          const response = await axios.get(`https://switchiify.com/SIHS/controll.php?checko=${user.student_id}`);
           setPositions(response.data);
           console.log(response.data);
         } catch (error) {
@@ -90,7 +90,7 @@ const plans = () =>{
     const fetchDatass = async () => {
       try {
         // const theid = (user.student_id);
-        const response = await axios.get(`http://localhost:8080/sihs/controll.php?totalsss=students`);
+        const response = await axios.get(`https://switchiify.com/SIHS/controll.php?totalsss=students`);
         setTora(response.data);
         console.log(response.dtat);
 

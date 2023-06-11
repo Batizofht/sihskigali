@@ -9,7 +9,7 @@ const All = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/sihs/ups.php?allstudents=yes');
+        const response = await axios.get('https://switchiify.com/SIHS/ups.php?allstudents=yes');
         setAllstudents(response.data);
       } catch (error) {
         console.log(error);

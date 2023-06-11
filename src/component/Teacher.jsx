@@ -27,7 +27,7 @@ console.log(admin)
       toast.error("NO FIELD SHOULD BE  EMPTY");
     }else{
     try{
-      const response = await axios.post("http://localhost:8080/sihs/adminteacher.php", {
+      const response = await axios.post("https://switchiify.com/SIHS/adminteacher.php", {
         adminphone: admin.phone,
         adminpass: admin.password,
         ADMIN: "ADMIN",

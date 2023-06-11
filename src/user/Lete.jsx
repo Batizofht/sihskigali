@@ -13,7 +13,7 @@ const DocumentViewer = () => {
     const times = setInterval(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get("http://localhost:8080/sihs/pdfsu.php?aha=a");
+          const response = await axios.get("https://switchiify.com/SIHS/pdfsu.php?aha=a");
           setPdffile(response.data);
         } catch (error) {
           console.log(error);
@@ -30,7 +30,7 @@ const DocumentViewer = () => {
 
   useEffect(() => {
     if (Object.keys(pdffile).length !== 0) {
-      const link = `http://localhost:8080/sihs/sittingplan/${pdffile.sitting}`;
+      const link = `https://switchiify.com/SIHS/sittingplan/${pdffile.sitting}`;
       setLink(link);
     }
   }, [pdffile]);

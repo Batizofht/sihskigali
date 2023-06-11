@@ -19,7 +19,7 @@ const SittingPlan = () => {
     }
     const elvsss = async () => {
       let roomNumber = 1;
-      const baseURL = "http://localhost:8080/sihs/virtual_class/alevel.php?";
+      const baseURL = "https://switchiify.com/SIHS/virtual_class/alevel.php?";
       let response = null;
     
       const confirmation = confirm("DO YOU REALLY WANT TO GENERATE A NEW SITTING PLAN FOR ALEVEL.");
@@ -62,7 +62,7 @@ const SittingPlan = () => {
     
     const clear = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/sihs/controll.php?clear");
+        const response = await axios.get("https://switchiify.com/SIHS/controll.php?clear");
         const data = response.data;
       
         if(data==true){
@@ -81,7 +81,7 @@ const SittingPlan = () => {
 
     const olevel = async () => {
       let roomNumber = 1;
-      const baseURL = "http://localhost:8080/sihs/virtual_class/olevel.php?";
+      const baseURL = "https://switchiify.com/SIHS/virtual_class/olevel.php?";
       let response = null;
     
       const confirmation = confirm("DO YOU REALLY WANT TO GENERATE A NEW SITTING PLAN FOR ALEVEL.");
@@ -120,7 +120,7 @@ const SittingPlan = () => {
     const navigation = useNavigate();
     const clearo = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/sihs/controll.php/sihs/controll.php?clearolevel");
+        const response = await axios.get("https://switchiify.com/SIHS/controll.php/sihs/controll.php?clearolevel");
         const data = response.data;
      
         if(data ==1){

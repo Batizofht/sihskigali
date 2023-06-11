@@ -21,7 +21,7 @@ const Student = () => {
       toast.error("THE STUDENT ID CAN'T BE EMPTY");
     }else{
     try{
-      const response = await axios.post("http://localhost:8080/sihs/controll.php", {
+      const response = await axios.post("https://switchiify.com/SIHS/controll.php", {
         studeid: studeid,
         what: "POST",
       }

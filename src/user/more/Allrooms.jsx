@@ -31,7 +31,7 @@ function MyVerticallyCenteredModal(props) {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/sihs/controll.php/sihs/controll.php?allthestudents=${name}`
+          `https://switchiify.com/SIHS/controll.php/sihs/controll.php?allthestudents=${name}`
         );
         const data = response.data;
         setPositions(data);
@@ -285,7 +285,7 @@ const Allrooms = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:8080/sihs/controll.php/sihs/controll.php?allrooms=yes'
+          'https://switchiify.com/SIHS/controll.php/sihs/controll.php?allrooms=yes'
         );
         const data = response.data;
         setRooms(data);

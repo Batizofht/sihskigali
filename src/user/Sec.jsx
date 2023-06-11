@@ -34,7 +34,7 @@ export const Sec = () => {
     theit.append("date", formattedDate);
     try{
 
-      const resp = await axios.post('http://localhost:8080/sihs/upssu.php',theit);
+      const resp = await axios.post('https://switchiify.com/SIHS/upssu.php',theit);
       // console.log(selectedFile)
       console.log(resp.data)
    toast.success(resp.data);

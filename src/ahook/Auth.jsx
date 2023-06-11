@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
       if (localStorage.getItem('users')) {
         try {
           const response = await axios.get(
-            `http://localhost:8080/sihs/controll.php?users=${active}`
+            `https://switchiify.com/SIHS/controll.php?users=${active}`
           );
           if (response.data) {
             setUser(response.data);
@@ -93,7 +93,7 @@ export const AuthProvider = ({ children }) => {
       if (localStorage.getItem('admin')) {
         try {
           const response = await axios.get(
-            `http://localhost:8080/sihs/admin.php?users=${active}`
+            `https://switchiify.com/SIHS/admin.php?users=${active}`
           );
           if (response.data) {
             setUser(response.data);
